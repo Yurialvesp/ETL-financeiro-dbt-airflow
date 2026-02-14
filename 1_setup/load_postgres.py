@@ -12,6 +12,13 @@ DB_NAME = os.getenv("DB_NAME")
 DB_USER = os.getenv("DBT_USER")
 DB_PASS = os.getenv("DBT_PASSWORD")
 DB_PORT = os.getenv("DB_PORT")
+print("HOST:", repr(DB_HOST))
+print("DB:", repr(DB_NAME))
+print("USER:", repr(DB_USER))
+print("PASS:", repr(DB_PASS))
+print("PORT:", repr(DB_PORT))
+
+
 
 # Ler o CSV gerado pelo main.py
 df = pd.read_csv("brapi_quotes.csv")
